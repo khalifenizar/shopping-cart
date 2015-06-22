@@ -9,4 +9,4 @@ cart.add(orange)
 cart.add(orange)
 cart.add(vacuum)
 
-p cart.items
+puts "Your total is: $#{cart.checkout}."
