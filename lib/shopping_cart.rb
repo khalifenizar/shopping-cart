@@ -10,8 +10,14 @@ class ShoppingCart
   end
 
   def checkout
-    @items.reduce(0) do |sum, item|
+    total = @items.reduce(0) do |sum, item|
       sum + item.price
+    end
+
+    if @items.size > 5
+      total * 0.9
+    else
+      total
     end
   end
 end
