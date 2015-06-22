@@ -1,8 +1,12 @@
 require_relative("lib/shopping_cart")
+require_relative("lib/item")
+
+orange = Item.new("orange", 10)
+vacuum = Item.new("vacuum cleaner", 150)
 
 cart = ShoppingCart.new
-cart.add("orange")
-cart.add("orange")
-cart.add("vacuum cleaner")
+cart.add(orange)
+cart.add(orange)
+cart.add(vacuum)
 
 p cart.items

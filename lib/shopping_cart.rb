@@ -5,7 +5,7 @@ class ShoppingCart
     @items = []
   end
 
-  def add(item_name)
-    @items.push(item_name)
+  def add(item)
+    @items.push(item)
   end
 end
